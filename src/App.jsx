@@ -1,14 +1,12 @@
 import './App.css'
-import filmData from './film-data.json'
 import Slideshow from './Slideshow.jsx'
 
 function App() {
+
   return (
     <>
       <div>
-        {filmData.map((slide) => (
-          <Slideshow slide={slide} key={slide.id}/>
-        ))}
+          <Slideshow />
       </div>
     </>
   )
