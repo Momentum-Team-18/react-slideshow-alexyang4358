@@ -1,13 +1,9 @@
 import { useState } from 'react'
 import React from 'react'
 
-
 function Slideshow(props) {
-    
-    const [count, setCount] = useState(props.slide)
     return (
         <>
-        {count && (
         <section className='slide'> 
             <img className='image' src={props.slide.image}></img>
             <div className='content'>
@@ -19,8 +15,7 @@ function Slideshow(props) {
                 <button className='button'>BACK</button>
                 <button className='button'>NEXT</button>
             </div>
-        </section>)
-        }
+        </section>
         </>
     )
     }

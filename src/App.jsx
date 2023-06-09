@@ -1,8 +1,8 @@
 import './App.css'
-import { useState } from 'react'
+import filmData from './film-data.json'
+import Slideshow from './Slideshow.jsx'
 
-
-function App( {filmData, Slideshow} ) {
+function App() {
   return (
     <>
       <div>
@@ -18,4 +18,4 @@ export default App
 
 // const [count, setCount] = useState(0)
 {/* <button onClick={() => setCount((count) => count + 1)}>count is {count}</button> */}
-
+// {filmData.pop((slide) => ()
